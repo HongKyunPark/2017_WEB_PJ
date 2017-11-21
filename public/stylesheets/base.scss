@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+
+body {
+  font: 1rem 'Montserrat', sans-serif;
+  margin-top: 50px;
+  padding-top: 1em;
+  & > .main-content {
+    min-height: 400px;
+  }
+}
+
+
+
+a:hover {
+  text-decoration: none;
+}
+
+.jumbotron {
+  margin-top: -1em;
+  background: url('/images/ioi3.jpg') no-repeat left center;
+  min-height: 30em;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container-fluid {
+  position: relative;
+  border-style: outset;
+  background-color: white;
+  height: 15em;
+  margin-top: -10em;
+
+  left: 40%;
+  transform: translateX(-50%);
+  text-align: center; }
+
+.bodies {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.text1{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top : 2em;
+
+}
+
+.categories {
+  text-align: center;
+  margin-top : 3em;
+
+}
+
+.bodies {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btext {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.categories img:hover {
+  -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+  filter: blur(2px);
+}
+
+.text {
+  text-align: center;
+
+  position: relative;
+  font-size: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  color:white;
+  font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+
+
+}
+
+.btmtext {
+  color: white;
+  position: relative;
+  border-top: #666A73 solid 6px;
+  background: #282C35;
+}
+
+.country li {
+  float:left;
+  list-style:none;
+  margin:10px;
+}
+
+.about li {
+  float:left;
+  list-style:none;
+  margin:10px;
+}
+
+.cpw {
+  text-align: center;
+}
+
+///////////////////
+.form-actions {
+  padding: 19px 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer {
+  margin-top: 1em;
+  padding-top: 1em;
+  color: #aaa;
+  border-top: .05rem solid #e5e5e5;
+  background-color: #282C35;
+}
+
+.main-title {
+  font-family: 'Raleway';
+  font-size: 2.5rem;
+  margin: 1em 0 0.5em 0;
+  border-bottom: 1px solid #eee;
+  color: #011a72;
+}
+
+.header > .navbar {
+  background-color: #FF90FF!important;
+}
+
+.search-input-group{
+  margin: 1em 0;
+  width: 100%;
+  position: relative;
+  input {
+    border-radius: 2em;
+    padding-left: 2.5em;
+    width: 100%!important;
+  }
+  i {
+    font-size: 1.3em;
+    top: 0.4em;
+    left: 0.5em;
+    color: #bababa;
+    position: absolute;
+  }
+
+}
+
+
+@media (max-width: 426px) {
+  .jumbotron {
+      display: none;
+
+  }
+}
+
+
+@media (min-width: 320px) {
+    html { font-size: 60%; }
+
+    .container {
+
+    }
+
+    .text1 {
+      font-size: 140%;
+    }
+
+}
+
+@media (min-width: 414px) {
+    html { font-size: 80%; }
+
+}
+
+@media (min-width: 700px) {
+    html { font-size: 90%; }
+
+}
+
+@media (max-width:768px) {
+
+    html { font-size: 65%; }
+
+      .use {
+        display: none;
+      }
+
+      .plan {
+        display: none;
+      }
+
+      .find {
+        display: none;
+      }
+
+      .connect {
+        display: none;
+      }
+
+      .country {
+        display: none;
+      }
+}
+
+@media (min-width: 1200px) {
+    html { font-size: 100%; }
+}
