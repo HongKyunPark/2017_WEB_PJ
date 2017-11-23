@@ -120,6 +120,27 @@ img {
 .header > .navbar {
   background-color: #FF90FF !important; }
 
+.header > .navbar > .nav-header > .navbar-brand {
+  font-size: 1.7rem;
+  color: #black;
+  font-weight: bold; }
+
+.slideshow {
+  width: 1600px;
+  height: 400px;
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.slideshow img {
+  position: absolute;
+  opacity: 0;
+  transition: all 1s ease; }
+
+.slideshow img.active {
+  opacity: 1.0; }
+
 .search-input-group {
   margin: 1em 0;
   width: 100%;
