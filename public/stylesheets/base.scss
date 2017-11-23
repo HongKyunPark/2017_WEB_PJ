@@ -29,10 +29,17 @@ a:hover {
   background-color: white;
   height: 15em;
   margin-top: -10em;
+  text-align: center;
 
-  left: 40%;
-  transform: translateX(-50%);
-  text-align: center; }
+  padding-top: 35px;
+  padding-bottom: 25px;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 4px;
+
+ }
 
 .bodies {
   position: relative;

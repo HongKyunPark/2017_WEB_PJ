@@ -1,404 +1,406 @@
 extends layout
 
 block content
-                        .jumbotron
-                        .text.center  
-                        .container.container-fluid
-                          h1 Find your next experience
-                          br
-                          br
-                          form
-                            .form-row
-                              .col-4
-                                input.form-control(type="text", placeholder="Search events or categories")
-                              .col
-                                input.form-control(type="text", placeholder="City or location")
-                              .col
-                                .form-row.align-items-center
-                                  .col-auto
-                                    select#inlineFormCustomSelect.custom-select.mb-2.mr-sm-2.mb-sm-0
-                                      option(selected="") All Dates
-                                      option(value="1") Today
-                                      option(value="2") Tomorrow
-                                      option(value="3") This Week
-                                      option(value="3") This Weekend
-                                      option(value="3") Next Week
-                                      option(value="3") Next Month
-                              .col
-                                button.btn.btn-danger(type="button")
-                                  
-                        .bodies.col-9.col-mid-4
-                            .text1
-                                .a1
-                                  h1 Popular Events in
-                                  |  
-                                  input.form-control(type='text', placeholder='Enter City or location')
-                                |   
-                                br
-                                |     
-                                .card-deck
-                                  .card
-                                    img.card-img-top(src='/images/ioi2.jpg', alt='i.o.i')
-                                    |         
-                                    .card-body
-                                      h4.card-title THU. DEC 7 9:30 AM 
-                                      |           
-                                      p.card-text
-                                        | 505(b)(2) Seminar | Seoul 
-                                        br
-                                        | Seoul
-                                    |         
-                                    .card-footer
-                                      small.text-muted
-                                        a(href='https://www.naver.com') #I.O.I
-                                  |       
-                                  .card
-                                    img.card-img-top(src='/images/ioi2.jpg', alt='OHMYGIRL')
-                                    |         
-                                    .card-body
-                                      h4.card-title FRI, OCT 13 4:00 PM
-                                      |           
-                                      p.card-text
-                                        | Civic Project [Naver]
-                                        br
-                                        | &#xB124;&#xC774;&#xBC84; &#xADF8;&#xB9B0;&#xD329;&#xD1A0;&#xB9AC;
-                                    |         
-                                    .card-footer
-                                      small.text-muted
-                                        a(href='https://www.naver.com') #SSS
-                                  |       
-                                  .card
-                                    img.card-img-top(src='/images/ioi2.jpg', alt='Card image cap')
-                                    |         
-                                    .card-body
-                                      h4.card-title SAT, OCT 14 6:00 PM
-                                      |           
-                                      p.card-text
-                                        | UCL visits Seoul, South Korea:
-                                        br
-                                        | Presentation and Information Session
-                                    |         
-                                    .card-footer
-                                      small.text-muted
-                                        a(href='https://www.naver.com') #SSS
-                                |     
-                                br
-                                br
-                                |     
-                                .card-deck
-                                  .card
-                                    img.card-img-top(src='/images/ioi2.jpg', alt='gugudan')
-                                    |         
-                                    .card-body
-                                      h4.card-title TUE, OCT 17 9:00 AM
-                                      |           
-                                      p.card-text
-                                        | Art of Awakening Visual Facilitation Lab - Seoul
-                                        br
-                                        | Gangnam-gu, Seoul
-                                    |         
-                                    .card-footer
-                                      small.text-muted
-                                        a(href='https://www.naver.com') #SS
-                                  |       
-                                  .card
-                                    img.card-img-top(src='/images/ioi2.jpg', alt='PRST')
-                                    |         
-                                    .card-body
-                                      h4.card-title THU, Nov 9 6:30 PM
-                                      |           
-                                      p.card-text
-                                        | 2017 World AeroPress Championship
-                                        br
-                                        | Cafe Alver, Seoul
-                                    |         
-                                    .card-footer
-                                      small.text-muted
-                                        a(href='https://www.naver.com') #AAA
-                                  |       
-                                  .card
-                                    img.card-img-top(src='/images/ioi2.jpg', alt='Card image cap')
-                                    |         
-                                    .card-body
-                                      h4.card-title THU, NOV 2 2:00 PM
-                                      |           
-                                      p.card-text
-                                        | MCCW Asia Regional Retreat:
-                                        br
-                                        | Surrendering to the Holy Spirit
-                                    |         
-                                    .card-footer
-                                      small.text-muted
-                                        a(href='https://www.naver.com') #AAAA
-                                |     
-                                br
-                                |     
-                                button.btn.btn-outline-primary(type='button') SEE MORE
-                                .categories
-                                  h2  Browse by Top Categories 
-                                  |       
-                                  .row
-                                    .col-sm-8
-                                      a(href='https://www.naver.com')
-                                        img(src='/images/ioi.jpg', alt='Music')
-                                        |           
-                                        .text
-                                          h1.title Music
-                                    |         
-                                    .col-sm-4
-                                      a(href='https://www.naver.com')
-                                        img(src='/images/ioi2.jpg', alt='F&D')
-                                      |         
-                                      .text
-                                        h1.title Food &amp; Drink
-                                  |       
-                                  br
-                                  |       
-                                  .row
-                                    .col-sm-4
-                                      a(href='https://www.naver.com')
-                                        img(src='/images/ioi2.jpg', alt='Classes')
-                                      |         
-                                      .text
-                                        h1.title Classes
-                                    |         
-                                    .col-sm-4
-                                      a(href='https://www.naver.com')
-                                        img(src='/images/ioi2.jpg', alt='Arts')
-                                      |         
-                                      .text
-                                        h1.title Arts
-                                    |         
-                                    .col-sm-4
-                                      a(href='https://www.naver.com')
-                                        img(src='/images/ioi2.jpg', alt='Parties')
-                                      |         
-                                      .text
-                                        h1.title Parties
-                                  |       
-                                  br
-                                  |       
-                                  .row
-                                    .col-sm-4
-                                      a(href='https://www.naver.com')
-                                        img(src='/images/ioi2.jpg', alt='Sports')
-                                      |           
-                                      .text
-                                        h1.title Sports &amp; Wellness
-                                    |         
-                                    .col-sm-8
-                                      a(href='https://www.naver.com')
-                                        img(src='/images/ioi.jpg', alt='Networking')
-                                      |         
-                                      .text
-                                        h1.title Networking
-                                  |       
-                                  br
+  .jumbotron
+  .text.center
+    
+  .container.container-fluid
+    h1 Find your next experience
+    br
+    br
+    form
+      .form-row
+        .form-group.row.justify-content-center
+          .col-4
+            input.form-control(type="text", placeholder="Search events or categories")
+          .col
+            input.form-control(type="text", placeholder="City or location")
+          .col
+            .form-row.align-items-center
+              .col-auto
+                select#inlineFormCustomSelect.custom-select.mb-2.mr-sm-2.mb-sm-0
+                  option(selected="") All Dates
+                  option(value="1") Today
+                  option(value="2") Tomorrow
+                  option(value="3") This Week
+                  option(value="3") This Weekend
+                  option(value="3") Next Week
+                  option(value="3") Next Month
+          .col
+            button.btn(type="Search") Search
+              
+        //////////////////////////////////////////////////////////////  
+  .bodies.col-9.col-mid-4
+    .text1
+      .a1
+        h1 Popular Events in
+        |  
+        input.form-control(type='text', placeholder='Enter City or location')
+      |   
+      br
+      |     
+      .card-deck
+        .card
+          img.card-img-top(src='/images/ioi2.jpg', alt='i.o.i')
+          |         
+          .card-body
+            h4.card-title THU. DEC 7 9:30 AM 
+            |           
+            p.card-text
+              | 505(b)(2) Seminar | Seoul 
+              br
+              | Seoul
+          |         
+          .card-footer
+            small.text-muted
+              a(href='https://www.naver.com') #I.O.I
+        |       
+        .card
+          img.card-img-top(src='/images/ioi2.jpg', alt='OHMYGIRL')
+          |         
+          .card-body
+            h4.card-title FRI, OCT 13 4:00 PM
+            |           
+            p.card-text
+              | Civic Project [Naver]
+              br
+              | &#xB124;&#xC774;&#xBC84; &#xADF8;&#xB9B0;&#xD329;&#xD1A0;&#xB9AC;
+          |         
+          .card-footer
+            small.text-muted
+              a(href='https://www.naver.com') #SSS
+        |       
+        .card
+          img.card-img-top(src='/images/ioi2.jpg', alt='Card image cap')
+          |         
+          .card-body
+            h4.card-title SAT, OCT 14 6:00 PM
+            |           
+            p.card-text
+              | UCL visits Seoul, South Korea:
+              br
+              | Presentation and Information Session
+          |         
+          .card-footer
+            small.text-muted
+              a(href='https://www.naver.com') #SSS
+      |     
+      br
+      br
+      |     
+      .card-deck
+        .card
+          img.card-img-top(src='/images/ioi2.jpg', alt='gugudan')
+          |         
+          .card-body
+            h4.card-title TUE, OCT 17 9:00 AM
+            |           
+            p.card-text
+              | Art of Awakening Visual Facilitation Lab - Seoul
+              br
+              | Gangnam-gu, Seoul
+          |         
+          .card-footer
+            small.text-muted
+              a(href='https://www.naver.com') #SS
+        |       
+        .card
+          img.card-img-top(src='/images/ioi2.jpg', alt='PRST')
+          |         
+          .card-body
+            h4.card-title THU, Nov 9 6:30 PM
+            |           
+            p.card-text
+              | 2017 World AeroPress Championship
+              br
+              | Cafe Alver, Seoul
+          |         
+          .card-footer
+            small.text-muted
+              a(href='https://www.naver.com') #AAA
+        |       
+        .card
+          img.card-img-top(src='/images/ioi2.jpg', alt='Card image cap')
+          |         
+          .card-body
+            h4.card-title THU, NOV 2 2:00 PM
+            |           
+            p.card-text
+              | MCCW Asia Regional Retreat:
+              br
+              | Surrendering to the Holy Spirit
+          |         
+          .card-footer
+            small.text-muted
+              a(href='https://www.naver.com') #AAAA
+      |     
+      br
+      |     
+      button.btn.btn-outline-primary(type='button') SEE MORE
+      .categories
+        h2  Browse by Top Categories 
+        |       
+        .row
+          .col-sm-8
+            a(href='https://www.naver.com')
+              img(src='/images/ioi.jpg', alt='Music')
+              |           
+              .text
+                h1.title Music
+          |         
+          .col-sm-4
+            a(href='https://www.naver.com')
+              img(src='/images/ioi2.jpg', alt='F&D')
+            |         
+            .text
+              h1.title Food &amp; Drink
+        |       
+        br
+        |       
+        .row
+          .col-sm-4
+            a(href='https://www.naver.com')
+              img(src='/images/ioi2.jpg', alt='Classes')
+            |         
+            .text
+              h1.title Classes
+          |         
+          .col-sm-4
+            a(href='https://www.naver.com')
+              img(src='/images/ioi2.jpg', alt='Arts')
+            |         
+            .text
+              h1.title Arts
+          |         
+          .col-sm-4
+            a(href='https://www.naver.com')
+              img(src='/images/ioi2.jpg', alt='Parties')
+            |         
+            .text
+              h1.title Parties
+        |       
+        br
+        |       
+        .row
+          .col-sm-4
+            a(href='https://www.naver.com')
+              img(src='/images/ioi2.jpg', alt='Sports')
+            |           
+            .text
+              h1.title Sports &amp; Wellness
+          |         
+          .col-sm-8
+            a(href='https://www.naver.com')
+              img(src='/images/ioi.jpg', alt='Networking')
+            |         
+            .text
+              h1.title Networking
+        |       
+        br
 
-                        .btmtext
-                            .btext.row.col-9.col-mid-4
-                                .col-3
-                                  .use
-                                    h3 Use Eventbrite
-                                    |   
-                                    ul
-                                      li How It Works
-                                      |   
-                                      li For Large &amp; Complex Events
-                                      |   
-                                      li Pricing
-                                      |   
-                                      li Community Guidelines
-                                      |   
-                                      li Eventbrite Mobile App
-                                      |   
-                                      li Eventbrite Check-In App
-                                      |   
-                                      li Eventbrite Spectrum
-                                      |   
-                                      li Rally - Fun Things To Do
-                                      |   
-                                      li Event Organizing Resources
-                                      |   
-                                      li Sitemap
-                                .col-3
-                                  .plan
-                                    h3 Plan Events
-                                    |     
-                                    ul
-                                      li Conference Management Software
-                                      |     
-                                      li Reunions
-                                      |     
-                                      li Nonprofits &amp; Fundraisers
-                                      |     
-                                      li Eventbrite Reviews
-                                      |     
-                                      li Sell Tickets
-                                      |     
-                                      li Event Management &amp; Planning
-                                      |     
-                                      li Online Event Registration
-                                      |     
-                                      li Online RSVP
-                                      |     
-                                      li Venue Booking &amp; Management
-                                      |     
-                                      li Event Promotion
-                                .col-3
-                                  .find
-                                    h3 Find Events
-                                    |     
-                                    ul
-                                      li Boston Events
-                                      |     
-                                      li Chicago Events
-                                      |     
-                                      li Denver Events
-                                      |     
-                                      li Houston Evetns
-                                      |     
-                                      li Los Angeles Events
-                                      |     
-                                      li Nashville Events
-                                      |     
-                                      li New York Events
-                                      |     
-                                      li San Diego Events
-                                      |     
-                                      li VSan Francisco Events
-                                      |     
-                                      li All Cities
-                                .col-3
-                                  .connect
-                                    h3 Connect With Us
-                                    |     
-                                    ul
-                                      li Contact Support
-                                      |     
-                                      li Contact Sales
-                                      |     
-                                      li Twitter
-                                      |     
-                                      li Facebook
-                                      |     
-                                      li Linkedln
-                                      |     
-                                      li Instagram
-                                      |     
-                                      li Google+
-                                .country
-                                  h3 Country
-                                  |   
-                                  ul
-                                    li Argentina
-                                    |   
-                                    li Australia
-                                    |   
-                                    li Brasil
-                                    |   
-                                    li Canade (EN)
-                                    |   
-                                    li Canade (FR)
-                                    |   
-                                    li Chile
-                                    |   
-                                    li Colombia
-                                    |   
-                                    li Deutschland
-                                    |   
-                                    li Espana
-                                    |   
-                                    li France
-                                    |   
-                                    li Hong Kong
-                                    |   
-                                    li Ireland
-                                    |   
-                                    li Italia
-                                    |   
-                                    li Mexico
-                                    |   
-                                    li Nederland
-                                    |   
-                                    li New Zealnd
-                                    |   
-                                    li Peru
-                                    |   
-                                    li Portugal
-                                    |   
-                                    li Singapore
-                                    |   
-                                    li United Kingdom
-                                    |   
-                                    li United States
-                                .about
-                                  ul
-                                    li About
-                                    |   
-                                    li Blog
-                                    |   
-                                    li Help
-                                    |   
-                                    li Careers
-                                    |   
-                                    li Press
-                                    |   
-                                    li Security
-                                    |   
-                                    li Developers
-                                    |   
-                                    li Terms
-                                    |   
-                                    li Privacy
-                                    |   
-                                    li Cookies
-                                    |   
-                                    li
-                                      .form-row.align-items-center
-                                        .col-auto
-                                          select.custom-select.mb-2.mr-sm-2.mb-sm-0
-                                            option(selected='') United States
-                                            |           
-                                            option(value='1') Argentina
-                                            |           
-                                            option(value='2') Australia
-                                            |           
-                                            option(value='3') Brasil
-                                            |           
-                                            option(value='4') Canade (EN)
-                                            |           
-                                            option(value='5') Canade (FR)
-                                            |           
-                                            option(value='6') Chile
-                                            |           
-                                            option(value='7') Colombia
-                                            |           
-                                            option(value='8') Deutschland
-                                            |           
-                                            option(value='9') Espana
-                                            |           
-                                            option(value='10') France
-                                            |           
-                                            option(value='11') Hong Kong
-                                            |           
-                                            option(value='12') Ireland
-                                            |           
-                                            option(value='13') Italia
-                                            |           
-                                            option(value='14') Mexico
-                                            |           
-                                            option(value='15') Nederland
-                                            |           
-                                            option(value='16') New Zealnd
-                                            |           
-                                            option(value='17') Peru
-                                            |           
-                                            option(value='18') Portugal
-                                            |           
-                                            option(value='19') Singapore
-                                            |           
-                                            option(value='20') United Kingdom
-                                            |           
-                                            option(value='21') United States                                
-                                                        
+  .btmtext
+    .btext.row.col-9.col-mid-4
+      .col-3
+        .use
+          h3 Use Eventbrite
+          |   
+          ul
+            li How It Works
+            |   
+            li For Large &amp; Complex Events
+            |   
+            li Pricing
+            |   
+            li Community Guidelines
+            |   
+            li Eventbrite Mobile App
+            |   
+            li Eventbrite Check-In App
+            |   
+            li Eventbrite Spectrum
+            |   
+            li Rally - Fun Things To Do
+            |   
+            li Event Organizing Resources
+            |   
+            li Sitemap
+      .col-3
+        .plan
+          h3 Plan Events
+          |     
+          ul
+            li Conference Management Software
+            |     
+            li Reunions
+            |     
+            li Nonprofits &amp; Fundraisers
+            |     
+            li Eventbrite Reviews
+            |     
+            li Sell Tickets
+            |     
+            li Event Management &amp; Planning
+            |     
+            li Online Event Registration
+            |     
+            li Online RSVP
+            |     
+            li Venue Booking &amp; Management
+            |     
+            li Event Promotion
+      .col-3
+        .find
+          h3 Find Events
+          |     
+          ul
+            li Boston Events
+            |     
+            li Chicago Events
+            |     
+            li Denver Events
+            |     
+            li Houston Evetns
+            |     
+            li Los Angeles Events
+            |     
+            li Nashville Events
+            |     
+            li New York Events
+            |     
+            li San Diego Events
+            |     
+            li VSan Francisco Events
+            |     
+            li All Cities
+      .col-3
+        .connect
+          h3 Connect With Us
+          |     
+          ul
+            li Contact Support
+            |     
+            li Contact Sales
+            |     
+            li Twitter
+            |     
+            li Facebook
+            |     
+            li Linkedln
+            |     
+            li Instagram
+            |     
+            li Google+
+      .country
+        h3 Country
+        |   
+        ul
+          li Argentina
+          |   
+          li Australia
+          |   
+          li Brasil
+          |   
+          li Canade (EN)
+          |   
+          li Canade (FR)
+          |   
+          li Chile
+          |   
+          li Colombia
+          |   
+          li Deutschland
+          |   
+          li Espana
+          |   
+          li France
+          |   
+          li Hong Kong
+          |   
+          li Ireland
+          |   
+          li Italia
+          |   
+          li Mexico
+          |   
+          li Nederland
+          |   
+          li New Zealnd
+          |   
+          li Peru
+          |   
+          li Portugal
+          |   
+          li Singapore
+          |   
+          li United Kingdom
+          |   
+          li United States
+      .about
+        ul
+          li About
+          |   
+          li Blog
+          |   
+          li Help
+          |   
+          li Careers
+          |   
+          li Press
+          |   
+          li Security
+          |   
+          li Developers
+          |   
+          li Terms
+          |   
+          li Privacy
+          |   
+          li Cookies
+          |   
+          li
+            .form-row.align-items-center
+              .col-auto
+                select.custom-select.mb-2.mr-sm-2.mb-sm-0
+                  option(selected='') United States
+                  |           
+                  option(value='1') Argentina
+                  |           
+                  option(value='2') Australia
+                  |           
+                  option(value='3') Brasil
+                  |           
+                  option(value='4') Canade (EN)
+                  |           
+                  option(value='5') Canade (FR)
+                  |           
+                  option(value='6') Chile
+                  |           
+                  option(value='7') Colombia
+                  |           
+                  option(value='8') Deutschland
+                  |           
+                  option(value='9') Espana
+                  |           
+                  option(value='10') France
+                  |           
+                  option(value='11') Hong Kong
+                  |           
+                  option(value='12') Ireland
+                  |           
+                  option(value='13') Italia
+                  |           
+                  option(value='14') Mexico
+                  |           
+                  option(value='15') Nederland
+                  |           
+                  option(value='16') New Zealnd
+                  |           
+                  option(value='17') Peru
+                  |           
+                  option(value='18') Portugal
+                  |           
+                  option(value='19') Singapore
+                  |           
+                  option(value='20') United Kingdom
+                  |           
+                  option(value='21') United States                                
