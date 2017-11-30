@@ -26,6 +26,9 @@ router.get('/', catchErrors(async (req, res, next) => {
     query = {$or: [
       {title: {'$regex': term, '$options': 'i'}},
       {location: {'$regex': term, '$options': 'i'}},
+      {time: {'$regex': term, '$options': 'i'}},
+      {teamname: {'$regex': term, '$options': 'i'}},
+      {teamcontent: {'$regex': term, '$options': 'i'}},
       {content: {'$regex': term, '$options': 'i'}}
     ]};
   }
@@ -64,6 +67,9 @@ router.put('/:id', catchErrors(async (req, res, next) => {
   }
   event.title = req.body.title;
   event.location = req.body.location;
+  event.time = req.body.time;
+  event.teamname = req.body.teamname;
+  event.teamcontent = req.body.teamcontent;
   event.content = req.body.content;
   event.tags = req.body.tags.split(" ").map(e => e.trim());
 
@@ -86,6 +92,9 @@ router.post('/', needAuth, catchErrors(async (req, res, next) => {
   var event = new Event({
     title: req.body.title,
     location: req.body.location,
+    time: req.body.time,
+    teamname: req.body.teamname,
+    teamcontent: req.body.teamcontent,
     author: user._id,
     content: req.body.content,
     tags: req.body.tags.split(" ").map(e => e.trim()),

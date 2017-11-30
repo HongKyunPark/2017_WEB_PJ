@@ -3,11 +3,18 @@ extends ../layout
 block content
   .container
     h1.main-title= event.title
-
-    .event.show
-      .contant= event.location
-      //.content= event.content
+      //상세보기 할 때 나옴
+    .event.show 
+      .contant= "[장소] : " + event.location
+      .contant= "[일정] : " + event.time
+      <br>
+      .contant= "[이벤트 소개]" 
+      .contant= event.content
+      <br>
+      .contant= "[주최 단체 소개] : " + event.teamname
+      .contant= event.teamcontent
       include _event
+  
 
       .buttons
         button.btn.btn-primary #[i.fa.fa-thumbs-up] Like
@@ -19,7 +26,7 @@ block content
       
     if event.numAnswers > 0
       hr
-      h3 #{event.numAnswers} Answer(s)
+      h3 참여자 : #{event.numAnswers}명
       .answers.show
         each answer in answers
           include _answer

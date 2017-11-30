@@ -19,8 +19,10 @@ block content
       .events
         each event in events.docs
           .event
-            a.title(href=`/events/${event.id}`)= event.title
-            .contant= "<장소>" + " | " + event.location + " | "          
+            //밖에서 보여지는 내용
+            a.title(href=`/events/${event.id}`)= event.title + "(주최 : " + event.teamname + ")" 
+            .contant= "[장소]" + " | " + event.location + " | "
+            .contant= "[일정]" + " | " + event.time + " | "
             include _event
 
       +paginate(events, '/events', {query: "???XXX&&"})
