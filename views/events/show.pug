@@ -5,7 +5,8 @@ block content
     h1.main-title= event.title
 
     .event.show
-      .content= event.content
+      .contant= event.location
+      //.content= event.content
       include _event
 
       .buttons
@@ -25,6 +26,6 @@ block content
 
     form(action=`/events/${event.id}/answers`, method='POST')
       .form-group
-        label(for='answer') Your Answer
+        label(for='answer') 이벤트 참가하기
         textarea.form-control(name="content", rows="5")
-      button.btn.btn-primary(type="submit") Post Your Answer
+      button.btn.btn-primary(type="submit") 이벤트 참가 신청

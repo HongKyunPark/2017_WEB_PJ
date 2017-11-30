@@ -20,6 +20,7 @@ block content
         each event in events.docs
           .event
             a.title(href=`/events/${event.id}`)= event.title
+            .contant= "<장소>" + " | " + event.location + " | "          
             include _event
 
       +paginate(events, '/events', {query: "???XXX&&"})
