@@ -28,3 +28,19 @@
 .form-group
   label(for="tags") Tags
   input.form-control(type="text", name="tags", placeholder="분류 태그를 작성해", value=event.tags ? event.tags.join(" ") : "")
+.form-group
+  label(for='') 이벤트 종류
+  select(name='')
+    option(value='camp', selected='') 캠프
+    |   
+    option(value='trip') 여행
+    |   
+    option(value='festival') 축제
+    |   
+    option(value='dinner') 저녁식사
+    |   
+    option(value='seminar') 세미나
+    |   
+    option(value='else') 기타
+    
+    
