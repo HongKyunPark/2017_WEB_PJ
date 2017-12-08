@@ -1,20 +1,29 @@
 .form-group
-  label(for="title") Title
+  label(for="title") EVENT TITLE
   input.form-control(type="text", name="title", placeholder="이벤트 제목을 작성해", value=event.title)
 .form-group
-  label(for="location") Location
+  label(for="location") LOCATION
   input.form-control(type="text", name="location", placeholder="이벤트 장소를 작성해", value=event.location)    
 .form-group
-  label(for="time") 시작-종료 시간 및 날짜 (예시 : 20171211 3:30PM - 20171211 7:30PM)
-  input.form-control(type="text", name="time", placeholder="예시 : 20171211 3:30PM - 20171211 7:30PM", value=event.time)    
+  label(for='from') STARTS
+  input#from(type='text', name="from", value=event.from)
+  label(for='to') ENDS
+  input#to(type='text', name="to", value=event.to)
 .form-group
-  label(for="event") 이벤트 내용 작성해
+  select(name='')
+    option(value='fee', selected='') 금액
+    |   
+    option(value='free') 무료
+    |   
+    option(value='charge') 유료
+.form-group
+  label(for="event") EVENT DESCRIPTION
   textarea.form-control(name="content", rows="4")= event.content
 .form-group
-  label(for="teamname") 등록 단체명
+  label(for="teamname") ORGANIZER NAME
   input.form-control(type="text", name="teamname", placeholder="등록 단체명 작성해", value=event.teamname)
 .form-group
-  label(for="teamcontent") 등록 단체 설명 
+  label(for="teamcontent") ORGANIZER DESCRIPTION
   textarea.form-control(name="teamcontent", rows="3")= event.teamcontent
 .form-group
   label(for="tags") Tags

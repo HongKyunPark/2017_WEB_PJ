@@ -9,14 +9,15 @@
       ul.navbar-nav.ml-auto
         li.nav-item
           a.nav-link(href="/events") BROWSE EVENT
-        li.nav-item
-          a.nav-link(href="/users") USER
         if (!currentUser) 
           li.nav-item
             a.nav-link(href='/signin') SIGN IN
           li.nav-item
             a.nav-link(href='/users/new') SIGN UP
         else
+          if currentUser._id == "1457358664379942"
+            li.nav-item
+              a.nav-link(href="/users") USER
           li.nav-item
             a.nav-link(href=`/users/${currentUser._id}`) My Profile
           li.nav-item

@@ -16,16 +16,32 @@ block content
     if events.total <= 0 
       .alert.alert-info No events available yet
     else
-      .events
-        each event in events.docs
-          .event
-            //밖에서 보여지는 내용
-            a.title(href=`/events/${event.id}`)= event.title + "(주최 : " + event.teamname + ")" 
-            .contant= "[장소]" + " | " + event.location + " | "
-            .contant= "[일정]" + " | " + event.time + " | "
-            include _event
+      .bodies.col-9.col-mid-4
+        .card-deck
+          .events
+            each event in events.docs
+              .event
+                .card
+                  img.card-img-top(src='/images/ioi2.jpg', alt='i.o.i')
+                  |         
+                  .card-body
+                    a.title(href=`/events/${event.id}`)= event.title + "(주최 : " + event.teamname + ")" 
+                    |           
+                    p.card-text
+                      .contant= "[장소]" + " | " + event.location + " | "
+                      //.contant= "[일정]" + " | " + event.time + " | "
+                      .contant= "[일정]" + " | " + event.from + " ~ " + event.to + " | "
+                      include _event
+                  |         
+                  .card-footer
+                    small.text-muted
+                      .tags.badges
+                        each tag in event.tags
+                          span.badge.badge-phill.badge-secondary= tag
+                          |      
+          
 
-      +paginate(events, '/events', {query: "???XXX&&"})
+            +paginate(events, '/events', {query: "???XXX&&"})
 
     hr
     a.btn.btn-primary(href='/events/new') Make Event
