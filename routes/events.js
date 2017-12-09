@@ -31,7 +31,9 @@ router.get('/', catchErrors(async (req, res, next) => {
       {teamname: {'$regex': term, '$options': 'i'}},
       {teamcontent: {'$regex': term, '$options': 'i'}},
       {content: {'$regex': term, '$options': 'i'}},
-      {price: {'$regex': term, '$options': 'i'}}
+      {price: {'$regex': term, '$options': 'i'}},
+      {type: {'$regex': term, '$options': 'i'}},
+      {topic: {'$regex': term, '$options': 'i'}}
     ]};
   }
   const events = await Event.paginate(query, {
@@ -76,6 +78,8 @@ router.put('/:id', catchErrors(async (req, res, next) => {
   event.teamcontent = req.body.teamcontent;
   event.content = req.body.content;
   event.price = req.body.price;
+  event.type = req.body.type;
+  event.topic = req.body.topic;
   event.tags = req.body.tags.split(" ").map(e => e.trim());
 
   await event.save();
@@ -105,6 +109,8 @@ router.post('/', needAuth, catchErrors(async (req, res, next) => {
     author: user._id,
     content: req.body.content,
     price: req.body.price,
+    type: req.body.type,
+    topic: req.body.topic,
     tags: req.body.tags.split(" ").map(e => e.trim()),
   });
   await event.save();

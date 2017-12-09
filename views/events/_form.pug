@@ -23,18 +23,45 @@
   input.form-control(type="text", name="tags", placeholder="분류 태그를 작성해주세요", value=event.tags ? event.tags.join(" ") : "")
 .form-group
   label(for='') 이벤트 종류
-  select(name='')
-    option(value='camp', selected='') 캠프
-    |   
-    option(value='trip') 여행
-    |   
-    option(value='festival') 축제
-    |   
-    option(value='dinner') 저녁식사
-    |   
-    option(value='seminar') 세미나
-    |   
-    option(value='else') 기타
+  .button-group
+    button.camp(type="button")
+      i  캠프
+    button.trip(type="button")
+      i  여행
+    button.festival(type="button")
+      i  축제
+    button.dinner(type="button")
+      i  저녁식사
+    button.seminar(type="button")
+      i  세미나
+    button.else(type="button")
+      i  기타     
+  .form-group.type
+    label(for="type")
+    input.form(type="text", name="type", value=event.type, style="display: none;")
+      
+.form-group
+  label(for='') 이벤트 분야
+  .button-group
+    button.business(type="button")
+      i  비즈니스
+    button.family(type="button")
+      i  가족
+    button.food(type="button")
+      i  음식
+    button.health(type="button")
+      i  건강
+    button.home(type="button")
+      i  집
+    button.music(type="button")
+      i  음악
+    button.sports(type="button")
+      i  스포츠
+    button.other(type="button")
+      i  기타     
+  .form-group.topic
+    label(for="topic")
+    input.form(type="text", name="topic", value=event.topic, style="display: none;")
 
 
 .form-group
@@ -46,4 +73,4 @@
       i  PAID TICEKT
   .form-group.fee
     label(for="price") PRICE
-    input.form-control(type="text", name="price", value=event.title, placeholder="티켓 금액을 입력해주세요", style="display: none;")
+    input.form-control(type="text", name="price", value=event.price, placeholder="티켓 금액을 입력해주세요", style="display: none;")

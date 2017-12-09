@@ -12,6 +12,8 @@ var schema = new Schema({
   teamcontent: {type: String, trim: true, required: true},
   content: {type: String, trim: true, required: true},
   price: {type: String, trim: true, required: true},
+  type: {type: String, trim: true, required: true},
+  topic: {type: String, trim: true, required: true},
   tags: [String],
   numLikes: {type: Number, default: 0},
   numAnswers: {type: Number, default: 0},

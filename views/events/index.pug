@@ -36,6 +36,8 @@ block content
                   .card-footer
                     small.text-muted
                       .tags.badges
+                        .contant= "[종류] " + event.type
+                        .contant= "[분야] " + event.topic
                         each tag in event.tags
                           span.badge.badge-phill.badge-secondary= tag
                           |      

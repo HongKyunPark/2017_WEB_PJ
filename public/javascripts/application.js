@@ -62,4 +62,79 @@ $(function($){
     $(".form-group.fee input").val("");
 
   })
+
+///////////////////////////////////////////
+  $(".button-group button.camp").click(function(e){
+    $(".form-group.type input").attr("readonly",true);
+    $(".form-group.type input").toggle();
+    $(".form-group.type input").val("캠프");
+  })
+  $(".button-group button.trip").click(function(e){
+    $(".form-group.type input").attr("readonly",true);
+    $(".form-group.type input").toggle();
+    $(".form-group.type input").val("여행");
+  })
+  $(".button-group button.festival").click(function(e){
+    $(".form-group.type input").attr("readonly",true);
+    $(".form-group.type input").toggle();
+    $(".form-group.type input").val("축제");
+  })
+  $(".button-group button.dinner").click(function(e){
+    $(".form-group.type input").attr("readonly",true);
+    $(".form-group.type input").toggle();
+    $(".form-group.type input").val("저녁식사");
+  })
+  $(".button-group button.seminar").click(function(e){
+    $(".form-group.type input").attr("readonly",true);
+    $(".form-group.type input").toggle();
+    $(".form-group.type input").val("세미나");
+  })
+  $(".button-group button.else").click(function(e){
+    $(".form-group.type input").attr("readonly",true);
+    $(".form-group.type input").toggle();
+    $(".form-group.type input").val("기타");
+  })
+
+/////////////////////////////////////////////
+  $(".button-group button.business").click(function(e){
+    $(".form-group.topic input").attr("readonly",true);
+    $(".form-group.topic input").toggle();
+    $(".form-group.topic input").val("비즈니스");
+  })
+  $(".button-group button.family").click(function(e){
+    $(".form-group.topic input").attr("readonly",true);
+    $(".form-group.topic input").toggle();
+    $(".form-group.topic input").val("가족");
+  })
+  $(".button-group button.food").click(function(e){
+    $(".form-group.topic input").attr("readonly",true);
+    $(".form-group.topic input").toggle();
+    $(".form-group.topic input").val("음식");
+  })
+  $(".button-group button.health").click(function(e){
+    $(".form-group.topic input").attr("readonly",true);
+    $(".form-group.topic input").toggle();
+    $(".form-group.topic input").val("건강");
+  })
+  $(".button-group button.home").click(function(e){
+    $(".form-group.topic input").attr("readonly",true);
+    $(".form-group.topic input").toggle();
+    $(".form-group.topic input").val("집");
+  })
+  $(".button-group button.music").click(function(e){
+    $(".form-group.topic input").attr("readonly",true);
+    $(".form-group.topic input").toggle();
+    $(".form-group.topic input").val("음악");
+  })
+  $(".button-group button.sports").click(function(e){
+    $(".form-group.topic input").attr("readonly",true);
+    $(".form-group.topic input").toggle();
+    $(".form-group.topic input").val("스포츠");
+  })
+  $(".button-group button.other").click(function(e){
+    $(".form-group.topic input").attr("readonly",true);
+    $(".form-group.topic input").toggle();
+    $(".form-group.topic input").val("기타");
+  })
+
 });
