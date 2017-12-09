@@ -19,9 +19,6 @@
   label(for="teamcontent") ORGANIZER DESCRIPTION
   textarea.form-control(name="teamcontent", rows="3")= event.teamcontent
 .form-group
-  label(for="tags") Tags
-  input.form-control(type="text", name="tags", placeholder="분류 태그를 작성해주세요", value=event.tags ? event.tags.join(" ") : "")
-.form-group
   label(for='') 이벤트 종류
   .button-group
     button.camp(type="button")

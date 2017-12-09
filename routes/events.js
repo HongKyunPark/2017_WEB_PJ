@@ -80,7 +80,6 @@ router.put('/:id', catchErrors(async (req, res, next) => {
   event.price = req.body.price;
   event.type = req.body.type;
   event.topic = req.body.topic;
-  event.tags = req.body.tags.split(" ").map(e => e.trim());
 
   await event.save();
   req.flash('success', 'Successfully updated');
@@ -111,7 +110,6 @@ router.post('/', needAuth, catchErrors(async (req, res, next) => {
     price: req.body.price,
     type: req.body.type,
     topic: req.body.topic,
-    tags: req.body.tags.split(" ").map(e => e.trim()),
   });
   await event.save();
   //
