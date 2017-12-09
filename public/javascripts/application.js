@@ -48,3 +48,18 @@ $(function() {
         }
     });
 });
+
+$(function($){
+  $(".button-group button.free").click(function(e){
+    $(".form-group.fee input").attr("readonly",true);
+    $(".form-group.fee input").toggle();
+    $(".form-group.fee input").val("무료");
+  })
+
+  $(".button-group button.paid").click(function(e){
+    $(".form-group.fee input").attr("readonly",false);
+    $(".form-group.fee input").toggle();
+    $(".form-group.fee input").val("");
+
+  })
+});

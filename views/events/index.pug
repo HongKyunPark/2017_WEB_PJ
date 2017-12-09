@@ -29,8 +29,8 @@ block content
                     |           
                     p.card-text
                       .contant= "[장소]" + " | " + event.location + " | "
-                      //.contant= "[일정]" + " | " + event.time + " | "
                       .contant= "[일정]" + " | " + event.from + " ~ " + event.to + " | "
+                      .contant= "[가격]" + " | " + event.price + " | "
                       include _event
                   |         
                   .card-footer

@@ -10,13 +10,6 @@
   label(for='to') ENDS
   input#to(type='text', name="to", value=event.to)
 .form-group
-  select(name='')
-    option(value='fee', selected='') 금액
-    |   
-    option(value='free') 무료
-    |   
-    option(value='charge') 유료
-.form-group
   label(for="event") EVENT DESCRIPTION
   textarea.form-control(name="content", rows="4")= event.content
 .form-group
@@ -42,5 +35,15 @@
     option(value='seminar') 세미나
     |   
     option(value='else') 기타
-    
-    
+
+
+.form-group
+  h2.main-title Create Tickets
+  .button-group
+    button.free(type="button")
+      i  FREE TICKET
+    button.paid(type="button")
+      i  PAID TICEKT
+  .form-group.fee
+    label(for="price") PRICE
+    input.form-control(type="text", name="price", value=event.title, placeholder="티켓 금액을 입력해주세요", style="display: none;")

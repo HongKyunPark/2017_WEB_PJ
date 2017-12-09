@@ -26,12 +26,12 @@ router.get('/', catchErrors(async (req, res, next) => {
     query = {$or: [
       {title: {'$regex': term, '$options': 'i'}},
       {location: {'$regex': term, '$options': 'i'}},
-      //{time: {'$regex': term, '$options': 'i'}},
       {from: {'$regex': term, '$options': 'i'}},
       {to: {'$regex': term, '$options': 'i'}},
       {teamname: {'$regex': term, '$options': 'i'}},
       {teamcontent: {'$regex': term, '$options': 'i'}},
-      {content: {'$regex': term, '$options': 'i'}}
+      {content: {'$regex': term, '$options': 'i'}},
+      {price: {'$regex': term, '$options': 'i'}}
     ]};
   }
   const events = await Event.paginate(query, {
@@ -75,6 +75,7 @@ router.put('/:id', catchErrors(async (req, res, next) => {
   event.teamname = req.body.teamname;
   event.teamcontent = req.body.teamcontent;
   event.content = req.body.content;
+  event.price = req.body.price;
   event.tags = req.body.tags.split(" ").map(e => e.trim());
 
   await event.save();
@@ -103,6 +104,7 @@ router.post('/', needAuth, catchErrors(async (req, res, next) => {
     teamcontent: req.body.teamcontent,
     author: user._id,
     content: req.body.content,
+    price: req.body.price,
     tags: req.body.tags.split(" ").map(e => e.trim()),
   });
   await event.save();
