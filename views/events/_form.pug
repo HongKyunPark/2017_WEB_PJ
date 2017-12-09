@@ -1,9 +1,9 @@
 .form-group
   label(for="title") EVENT TITLE
-  input.form-control(type="text", name="title", placeholder="이벤트 제목을 작성해", value=event.title)
+  input.form-control(type="text", name="title", placeholder="이벤트 제목을 작성해주세요", value=event.title)
 .form-group
   label(for="location") LOCATION
-  input.form-control(type="text", name="location", placeholder="이벤트 장소를 작성해", value=event.location)    
+  input.form-control(type="text", name="location", placeholder="이벤트 장소를 작성해주세요", value=event.location)    
 .form-group
   label(for='from') STARTS
   input#from(type='text', name="from", value=event.from)
@@ -14,13 +14,13 @@
   textarea.form-control(name="content", rows="4")= event.content
 .form-group
   label(for="teamname") ORGANIZER NAME
-  input.form-control(type="text", name="teamname", placeholder="등록 단체명 작성해", value=event.teamname)
+  input.form-control(type="text", name="teamname", placeholder="등록 단체명을 작성해주세요", value=event.teamname)
 .form-group
   label(for="teamcontent") ORGANIZER DESCRIPTION
   textarea.form-control(name="teamcontent", rows="3")= event.teamcontent
 .form-group
   label(for="tags") Tags
-  input.form-control(type="text", name="tags", placeholder="분류 태그를 작성해", value=event.tags ? event.tags.join(" ") : "")
+  input.form-control(type="text", name="tags", placeholder="분류 태그를 작성해주세요", value=event.tags ? event.tags.join(" ") : "")
 .form-group
   label(for='') 이벤트 종류
   select(name='')
